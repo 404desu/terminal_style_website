@@ -4,133 +4,153 @@ body {
   min-height: 99%;
   width: 100%;
   min-width: 550px;
-  color: #cdd6f4;
-  background: #1e1e2e; 
+  color: #e0def4; /* White */
+  background: #000000; /* Black */
   font-family: cursor, monospace;
   overflow-x: hidden;
-  }
-  ::selection {
-    color: #5f26ba;
-    background-color: #396f54;
-  }
-  ::-moz-selection {
-    color: #5f26ba;
-    background-color: #396f54;
-  }
-  textarea {
-    left: -1000px;
-    position: absolute;
-  }
-  b {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  /* Cursor Start */
-  .cursor {
-    font-size: 12px;
-    color: #396f54;
-    background-color: #396f54;
-    position: relative;
-    opacity: 1;
-    height: 1.5em;
-    width: 10px;
-    max-width: 10px;
-    transform: translateY(4px);
-    overflow: hidden;
-    text-indent: -5px;
-    display: inline-block;
-    text-decoration: blink;
-    animation: blinker 1s linear infinite;
-  }
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-  #command {
-    cursor: text;
-    height: 50px;
-    color: #aa80ee;
-  }
-  #liner {
-    line-height: 1.3em;
-    margin-top: -2px;
-    animation: show 0.5s ease forwards;
-    animation-delay: 1.2s;
+}
+
+::selection {
+  color: #aaff80; /* Lime */
+  background-color: #5fffd9; /* Mint */
+}
+
+::-moz-selection {
+  color: #aaff80; /* Lime */
+  background-color: #5fffd9; /* Mint */
+}
+
+textarea {
+  left: -1000px;
+  position: absolute;
+}
+
+b {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Cursor Start */
+.cursor {
+  font-size: 12px;
+  color: #5fffd9; /* Mint */
+  background-color: #5fffd9; /* Mint */
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 10px;
+  max-width: 10px;
+  transform: translateY(4px);
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
     opacity: 0;
   }
-  #liner::before {
-    color: #f5c2e7;
-    content: "root@visitor:~$";
+}
+
+#command {
+  cursor: text;
+  height: 50px;
+  color: #aaff80; /* Lime */
+}
+
+#liner {
+  line-height: 1.3em;
+  margin-top: -2px;
+  animation: show 0.5s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+#liner::before {
+  color: #f5f5f5; /* White */
+  content: "root@visitor:~$";
+}
+
+#liner.password::before {
+  content: "Password:";
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
   }
-  #liner.password::before {
-    content: "Password:";
+  to {
+    opacity: 1;
   }
-  @keyframes show {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+/* Cursor End */
+
+p {
+  display: block;
+  line-height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.05em;
+  animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+  animation: typing 0 steps(30, end);
+}
+
+.margin {
+  margin-left: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  /* Cursor End */
-  p {
-    display: block;
-    line-height: 1.3em;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0;
-    letter-spacing: 0.05em;
-    animation: typing 0.5s steps(30, end);
+  to {
+    width: 100%;
   }
-  .no-animation {
-    animation: typing 0 steps(30, end);
-  }
-  .margin {
-    margin-left: 20px;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  .index {
-    color: #f38ba8;
+}
+
+.index {
+  color: #aaff80; /* Lime */
 }
 
 .color2 {
-    color: #f5a97f;
+  color: #5fffd9; /* Mint */
 }
 
 .command {
-    color: #cdd6f4;
-    text-shadow: 0 0 5px #8a8fa3;
+  color: #e0def4; /* White */
+  text-shadow: 0 0 5px #8a8fa3;
 }
 
 .error {
-    color: #f38ba8;
+  color: #aaff80; /* Lime */
 }
 
 .white {
-    color: #e0def4;
+  color: #e0def4; /* White */
 }
 
 .inherit,
 a {
-    color: #d6acff; 
+  color: #aaff80; /* Lime */
 }
-  a {
-    text-decoration: inherit;
-  }
-  a:hover {
-    background: #404646;
-    color: #bf9df5;
-  }
-  a:focus {
-    outline: 0;
-  }
+
+a {
+  text-decoration: inherit;
+}
+
+a:hover {
+  background: #404646;
+  color: #5fffd9; /* Mint */
+}
+
+a:focus {
+  outline: 0;
+}
