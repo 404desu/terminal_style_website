@@ -17,10 +17,10 @@ setTimeout(function() {
 window.addEventListener("keyup", enterKey);
 
 console.log(
-  "%cYou hacked my password!😠",
+  "%cYou hacked my password!",
   "color: #04ff00; font-weight: bold; font-size: 24px;"
 );
-console.log("%cPassword: '" + password + "' - I wonder what it does?🤔", "color: grey");
+console.log("%cPassword: '" + password + "' - I wonder what it does?", "color: grey");
 
 //init
 textarea.value = "";
@@ -88,6 +88,9 @@ function commander(cmd) {
     case "projects":
       loopLines(projects, "color2 margin", 80);
       break;
+    case "certifications":
+      loopLines(certifications, "color2 margin", 80);
+      break;
     case "email":
       addLine('Opening mailto:<a href="mailto:"></a>...', "color2", 80);
       newTab(email);
@@ -103,7 +106,7 @@ function commander(cmd) {
       pw = true;
       break;
     case "password":
-      addLine("<span class=\"inherit\"> Lol! You're joking, right? You\'re gonna have to try harder than that!😂</span>", "error", 100);
+      addLine("<span class=\"inherit\"> Lol! You're joking, right? You\'re gonna have to try harder than that!</span>", "error", 100);
       break;
     case "history":
       addLine("<br>", "", 0);

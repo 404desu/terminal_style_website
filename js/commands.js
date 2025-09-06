@@ -12,7 +12,6 @@ whoami = [
 social = [
   "<br>",
   'twitter        <a href="' + twitter + '" target="_blank">twitter/' + '</a>',
-  'github         <a href="' + github + '" target="_blank">github/' + "</a>",
   "<br>"
 ];
 
@@ -25,14 +24,23 @@ secret = [
 projects = [
   "<br>",
   "Still curating... most projects are offline, on GitHub, or confidential.",
+  'github         <a href="' + github + '" target="_blank">github/' + "</a>",
+  "<br>"
+];
+
+certifications = [
+  "<br>",
+  "Certifications are posted and updated on my LinkedIn from time to time.",
+  'linkedin       <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank">linkedin/</a>',
   "<br>"
 ];
 
 help = [
   "<br>",
-  '<span class="command">whoami</span>         Who are you?/All about you!',
+  '<span class="command">whoami</span>         Who are you?',
   '<span class="command">social</span>         Display social networks',
   '<span class="command">projects</span>       View coding projects',
+  '<span class="command">certifications</span> View current certifications',
   '<span class="command">email</span>          Do not email me!',
   '<span class="command">secret</span>         Find the password',
   '<span class="command">history</span>        View command history',
