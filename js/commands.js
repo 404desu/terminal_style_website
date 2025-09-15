@@ -1,17 +1,18 @@
-var twitter = " ";
-var github = " ";
 var email = 'mailto:';
 var password = " ";
 
 whoami = [
   "<br>",
-  "The paradox of “Who am I?” is: we never know who we are, but, we tend to constantly find out.",
+  "More about you. (Tell more about who you are)!",
   "<br>"
 ];
 
 social = [
   "<br>",
-  'twitter        <a href="' + twitter + '" target="_blank">twitter/' + '</a>',
+  'twitter        <a href="https://twitter.com/YOUR_USERNAME" target="_blank">twitter/</a>',
+  'linkedin       <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">linkedin/</a>',
+  'instagram      <a href="https://instagram.com/YOUR_USERNAME" target="_blank">instagram/</a>',
+  'facebook       <a href="https://facebook.com/YOUR_USERNAME" target="_blank">facebook/</a>',
   "<br>"
 ];
 
@@ -24,14 +25,13 @@ secret = [
 projects = [
   "<br>",
   "Still curating... most projects are offline, on GitHub, or confidential.",
-  'github         <a href="' + github + '" target="_blank">github/' + "</a>",
+  'github         <a href="https://github.com/YOUR_USERNAME" target="_blank">github/</a>',
   "<br>"
 ];
 
 certifications = [
   "<br>",
-  "Certifications are posted and updated on my LinkedIn from time to time.",
-  'linkedin       <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank">linkedin/</a>',
+  "Any certifications I earn will be posted here.",
   "<br>"
 ];
 
@@ -41,8 +41,8 @@ help = [
   '<span class="command">social</span>         Display social networks',
   '<span class="command">projects</span>       View coding projects',
   '<span class="command">certifications</span> View current certifications',
-  '<span class="command">email</span>          Do not email me!',
-  '<span class="command">secret</span>         Find the password',
+  '<span class="command">email</span>          Mail address: [REDACTED] to prevent spam overload. Nice try!',
+  '<span class="command">secret</span>         Definitely not a trap. Go on, trust me.',
   '<span class="command">history</span>        View command history',
   '<span class="command">help</span>           You obviously already know what this does',
   '<span class="command">clear</span>          Clear terminal',
@@ -75,8 +75,9 @@ banner = [
 "  ⣾⢦⣾⣿⣷⣽⢟⢞⣷⡿⡫⢔⣾⣿⢋⣞⣿⣿⠋⡅⠤⠾⠿⠶⠒⡇⣿⣿⣿⣿⣿⣿⡿⣫⢞⣵⡿⣷⠟⢴⣿⣿⣰⡾⢺⣇⠹⣇⠘⣅⢮⢿⡘⣿⣷⡻⣷⠑⣝⢿⣿⣿⡧⣳⣟",
 "  ⣷⢿⡿⣻⡿⣫⣾⡿⣏⣺⣪⣿⠟⣡⣿⢏⣶⢿⣴⣾⢍⡩⢟⣟⣳⣀⠿⣿⣿⣿⡿⡯⡟⡵⢟⢛⣾⡯⣼⠊⢹⣿⠔⣰⡄⢿⡴⡽⡔⣤⠪⣓⠓⢝⣿⣿⣾⢷⣈⣷⡟⢿⣿⣿⣾",
 "  ⣿⣿⣿⣻⡴⣟⣽⣿⡿⣵⢿⢕⣾⣽⣿⣟⣯⣽⣿⣷⣯⣾⡿⢡⣶⣽⣛⣿⡿⢯⣾⢋⣿⣟⣛⣿⣟⣵⣿⢰⢸⣿⣸⣿⣿⡜⣿⡴⣬⡌⠳⠬⡻⢷⡪⣿⣿⣿⣷⡷⣝⣿⣽⣿⣿",
-  '<span class="color2">Welcome to my terminal-style website.</span>',
-  '<span class="color2">Designed by</span> <a href="https://github.com/404desu" target="_blank"><span class="highlight">404desu</span></a>',
-  '<span class="color2">No copyright at the moment. Feel free to use it simply by</span> <a href="https://github.com/404desu/terminal_style_website" target="_blank"><span class="highlight">forking that repository.</span></a>',
-  "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
+ '<span class="color2">Welcome to my terminal-inspired portfolio.</span>',
+  '<span class="color2">Created and maintained by</span> <a href="https://github.com/404desu" target="_blank"><span class="highlight">404desu</span></a>.',
+  '<span class="color2">This project is open source — feel free to</span> <a href="https://github.com/404desu/terminal_style_website" target="_blank"><span class="highlight">fork it on GitHub</span></a>.',
+  '<span class="color2">Type</span> <span class="command">\'help\'</span> <span class="color2">to see available commands.</span>',
 ];
+
