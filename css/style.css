@@ -1,23 +1,47 @@
+:root {
+  --bg: #282828;
+  --bg-dark: #1d2021;
+  --bg-light: #3c3836;
+
+  --fg: #ebdbb2;
+  --fg-muted: #d5c4a1;
+
+  --red: #cc241d;
+  --red-light: #fb4934;
+  --green: #98971a;
+  --green-light: #b8bb26;
+  --yellow: #d79921;
+  --yellow-light: #fabd2f;
+  --blue: #458588;
+  --blue-light: #83a598;
+  --purple: #b16286;
+  --purple-light: #d3869b;
+  --aqua: #689d6a;
+  --aqua-light: #8ec07c;
+  --orange: #d65d0e;
+  --orange-light: #fe8019;
+}
+
 body {
   margin: 0;
   padding: 15px 20px;
   min-height: 99%;
   width: 100%;
   min-width: 550px;
-  color: #ebdbb2; /* Soft beige */
-  background: #1d2021; /* Gruvbox dark */
+  color: var(--fg);
+  background: var(--bg);
   font-family: cursor, monospace;
   overflow-x: hidden;
 }
 
 ::selection {
-  color: #1d2021;
-  background-color: #fabd2f; /* Yellow highlight */
+  color: var(--bg);
+  background-color: var(--yellow-light);
 }
 
 ::-moz-selection {
-  color: #1d2021;
-  background-color: #fabd2f;
+  color: var(--bg);
+  background-color: var(--yellow-light);
 }
 
 textarea {
@@ -33,8 +57,8 @@ b {
 /* Cursor Start */
 .cursor {
   font-size: 12px;
-  color: #fabd2f; /* Yellow */
-  background-color: #fabd2f;
+  color: var(--yellow-light);
+  background-color: var(--yellow-light);
   position: relative;
   opacity: 1;
   height: 1.5em;
@@ -56,7 +80,7 @@ b {
 #command {
   cursor: text;
   height: 50px;
-  color: #b8bb26; /* Green */
+  color: var(--green-light);
 }
 
 #liner {
@@ -68,12 +92,8 @@ b {
 }
 
 #liner::before {
-  color: #ebdbb2; /* Beige */
+  color: var(--fg);
   content: "root@visitor:~$";
-}
-
-#liner.password::before {
-  content: "Password:";
 }
 
 @keyframes show {
@@ -115,29 +135,29 @@ p {
 }
 
 .index {
-  color: #b8bb26; /* Green */
+  color: var(--green-light);
 }
 
 .color2 {
-  color: #8ec07c; /* Aqua */
+  color: var(--aqua-light);
 }
 
 .command {
-  color: #ebdbb2; /* Beige */
+  color: var(--yellow);
   text-shadow: none; /* Gruvbox prefers flat colors */
 }
 
 .error {
-  color: #fb4934; /* Red */
+  color: var(--red-light);
 }
 
 .white {
-  color: #ebdbb2; /* Beige */
+  color: var(--fg);
 }
 
 .inherit,
 a {
-  color: #8ec07c; /* Aqua */
+  color: var(--blue-light);
 }
 
 a {
@@ -145,8 +165,8 @@ a {
 }
 
 a:hover {
-  background: #3c3836;
-  color: #fabd2f; /* Yellow */
+  background: var(--bg-light);
+  color: var(--yellow-light);
 }
 
 a:focus {
